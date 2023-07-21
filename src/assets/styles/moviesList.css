@@ -1,0 +1,59 @@
+.movie{
+    margin: 20px;
+}
+
+.movie > *{
+    text-align: center;
+}
+
+.movie h6{
+    margin-top: 10px;
+}
+
+.movie img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+.list{
+    display: flex;
+    overflow-x: auto;
+    height: 420px;
+}
+
+/* importing styles from other stylesheet */
+
+.box{
+    display: flex;
+}
+
+.buttons-control{
+    margin-left: 15px;
+}
+
+.buttons-control button{
+    border: none;
+    transition: all 1s;
+    color: #108b8d;
+    padding: 5px 15px;
+    border-top: 2px solid #108b8d;
+    border-bottom: 2px solid #108b8d;
+}
+
+#first-button{
+ border-radius: 16px 0 0 16px;
+ border-left: 2px solid #108b8d;
+ border-right: 2px solid #108b8d;
+}
+
+#third-button{
+    border-radius: 0 16px 16px 0;
+    border-right: 2px solid #108b8d;
+    border-left: 2px solid #108b8d;
+}
+
+.buttons-control button:hover{
+    background-color: #108b8d;
+    color: white;
+}
+

@@ -1,0 +1,95 @@
+.carousel-item{
+    display: flex;
+    height: 500px;
+}
+
+.carousel-caption *{
+    display: flex;
+}
+.carousel-item #backdrop_path {
+    filter: brightness(0.5);
+    width: 100%;
+    height: 20%;
+}
+
+#poster{
+    width: 250px;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.genres-container b{
+    margin: 5px 5px 5px 0;
+}
+
+.container p{
+    margin-top: 25px;
+    text-align: start;
+}
+
+
+
+.details-container p{
+    margin: 5px 25px 5px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.details-container p * {
+    margin-right: 5px;
+}
+
+.buttons-container Button{
+    margin: 10px 10px 10px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    width: 25%;
+    height: 70%;
+    border-radius: 16px;
+
+    font-size: 15px;
+}
+
+/* Responsive web design stylesheet */
+
+@media (max-width: 980px) {
+    #poster{
+        display: none;
+    }
+    p, h4, b{
+        font-size: 9px;
+    }
+    h1{
+        font-size: 16px !important;
+    }
+
+    .carousel-item{
+        display: flex;
+        height: auto;
+    }
+
+    .buttons-container button{
+        font-size: 9px;
+        width: 50%;
+    }
+
+    .description-container{
+        margin: 0;
+    }
+
+    .container p{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+    }
+    .container *{
+        justify-content: center;
+    }
+}

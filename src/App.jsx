@@ -1,13 +1,11 @@
-import './App.css'
+import './assets/styles/app.css'
+import MainContainer from './components/mainContainer'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import MoviesList from './components/moviesList.jsx'
 function App() {
 
   return (
-    <div>
-      <h1>Movies</h1>
-      <MoviesList/>
-    </div>
+    <MainContainer/>
   )
 }
 

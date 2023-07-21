@@ -1,0 +1,53 @@
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);;
+
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(47, 47, 47);
+    color:#efefef;
+    border: none;
+    margin-left: 50px;
+    width: 50%;
+}
+
+#navigation{
+    display: flex;
+    align-items: center;
+    flex: 90%
+}
+
+#user{
+    position: relative;
+
+    flex:10%;
+    display: flex;
+    justify-content: center;
+
+    font-size: small;
+    color: #a1a1a1;    
+}
+
+#user:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: white;
+
+}
+
+#user:hover:before{
+    transition: all 0.5s;
+    
+    bottom:-20px;
+    height: 50px;
+}
