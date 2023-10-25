@@ -1,15 +1,17 @@
 body{
-    background-color: #141519;
+    background-color: #0d0c11;
     color: white;
-    font-family: Verdana, sans-serif;
     margin:0;
+    font-family: sans-serif;
+    padding: 0;
 }
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar:horizontal {
-    height: 10px;
+    height: 7px;
   }
 
 ::-webkit-scrollbar-thumb {

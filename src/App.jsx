@@ -1,11 +1,9 @@
 import './assets/styles/app.css'
-import MainContainer from './components/mainContainer'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Router from './components/Router'
 
 function App() {
-
   return (
-    <MainContainer/>
+    <Router/>
   )
 }
 

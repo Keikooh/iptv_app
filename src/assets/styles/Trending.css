@@ -1,0 +1,151 @@
+
+  
+    #release-date{
+        color: rgb(118, 118, 118);
+    }
+    
+    #vote-average{
+        color: rgb(255, 204, 0);
+    }
+    
+    #heart{
+        transition: all 0.5s;
+        color: rgb(255, 35, 79);
+        margin-right: 10px;
+    }
+    
+
+@media (min-width: 981px) {
+    .trending-list{
+        
+        margin: 50px;
+    }
+    
+    .movie{
+        margin: 20px;
+        font-family: sans-serif;
+
+        position: relative;
+    }
+    
+    .movie h6{
+        margin-top: 10px;
+    }
+    
+    .movie img{
+        width: 200px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        position: relative;
+    }
+
+    .movie img:hover{
+        transition: all 0.5s;
+        filter: brightness(0.5);
+        cursor: pointer;
+    }
+    /* .movie:before{
+        content: '\002B';
+        text-align: center;
+        padding: 15px 20px 15px 20px;
+        position: absolute;
+        background-color: red;
+        border-radius: 100%;
+        top: 30%;
+        left: 37%;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .movie img:hover +.movie:before{
+        background-color: blue;
+    } */
+    
+    .list{
+        display: flex;
+        overflow-x: auto;
+        height: 450px;
+    }
+    
+    .details{
+        margin-top: -20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+    }
+    
+    .section-title{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .section-title:after{
+        content: '';
+        position: absolute;
+        background-color: red;
+        width: 5px;
+        height: 5px;
+        bottom: 5px;
+        left: 6%;
+        border-radius: 16px;
+    
+    }
+    .section-title h2{
+        margin-left: 10px;
+    }
+    #heart:hover{
+        cursor: pointer;
+        transition: all 0.5s;
+        transform: scale(1.4);
+    }
+
+    #seeMoreButton{
+        border: none;
+        background-color: red;
+        color: white;
+        font-family: sans-serif;
+        position: absolute;
+        left: 35%;
+        top: 30%;
+        padding: 20px;
+
+    }
+
+    #seeMoreButton a{
+        text-decoration: none;
+        color: white;
+    }
+
+  
+}
+
+
+/* Responsive mobile design */
+@media (max-width: 980px) {
+    .movie img{
+        width: 200px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    /* .movie *{
+        border: 1px solid red;
+    } */
+
+    .fa-icon{
+        width: 50px;
+    }
+    .list{
+        height: auto;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .movie p{
+        font-size: 13px;
+    }
+    .movie h4{
+        font-size: 12px;
+    }
+}

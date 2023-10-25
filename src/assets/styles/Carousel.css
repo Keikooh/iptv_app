@@ -1,0 +1,146 @@
+.carousel{
+    position: relative;
+}
+
+.control-buttons{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-button{
+    transition: all 0.5s;
+    margin: 50px;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: rgb(176, 176, 176);
+    font-family: Tahoma;
+}
+
+.control-button:hover{
+    color: red;
+    transition: all 0.5s;
+}
+
+.carousel-item{
+    position: relative;
+    font-family: sans-serif;
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-item p{
+    font-size: 13px;
+    
+}
+
+.carousel-item h1{
+    font-size: 40px;
+}
+
+.genres{
+    list-style: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.list-genres{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 0;
+    color: rgb(142, 142, 142);
+}
+
+.list-genres > *{
+    margin: 0 5px;
+}
+
+.carousel-item #backdrop_path {
+    filter: brightness(0.4);
+    width: 100%;
+}
+.serie-details{
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    width: 30%;
+    margin-left: 150px;
+    padding: 30px;
+}
+
+#overview{
+    line-height: 25px;
+}
+
+#star{
+    color: rgb(255, 204, 0);
+    margin-right: 6px;
+}
+
+.buttons-container{
+    display: flex;
+    margin-top: 30px;
+}
+
+
+.buttons-container button{
+    margin-right: 30px;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: none;
+    color: rgb(199, 199, 199);
+    display: flex;
+    align-items: center;
+
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.buttons-container button p{
+    margin-left: 15px;
+}
+
+#watch-button{
+    z-index: 1000;
+    transition: all 1s;
+    background-color: rgb(184, 16, 16);;
+    
+}
+
+#add-button{
+    z-index: 1000;
+    transition: all 0.5s;
+    background: transparent;
+    border: 2px solid white;
+}
+
+
+#watch-button:hover{
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    background-color: red;
+    box-shadow: 0 0 30px rgb(255, 0, 0,0.9);
+}
+
+#add-button:hover{
+    transition: all 0.5s;
+    cursor: pointer;
+    background: white;
+    color: red;
+}
+
+
+/* Responsive web design stylesheet */
+
+@media (max-width: 980px) {
+  .carousel{
+    display: none;
+  }
+}
